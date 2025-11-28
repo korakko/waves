@@ -45,7 +45,7 @@ public class Mound : MonoBehaviour
         yield return new WaitForSeconds(5);
 
         DialogueManager.instance.ShowDialogue("I should go home now.");
-
+        yield return new WaitForSeconds(5);
         // reset shells
         ShellCounter.instance.shellCount = 0;
         ShellCounter.instance.UpdateText();  // works if you add UpdateText()

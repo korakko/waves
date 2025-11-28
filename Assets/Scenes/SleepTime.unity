@@ -1347,7 +1347,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 3
   m_Sprite: {fileID: -8841490917199087839, guid: ae28badd8f90549a0957e5adb4d2129f, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -1451,7 +1451,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8a055dcb448834afcaab089ee30036d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: '::'
-  nextSceneName: 
+  memoryImageUI: {fileID: 0}
 --- !u!4 &1513973322
 Transform:
   m_ObjectHideFlags: 0

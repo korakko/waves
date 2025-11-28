@@ -18,18 +18,26 @@ public class MemoryObject : MonoBehaviour
 
     private System.Collections.IEnumerator PlayMemoryCutscene()
     {
-        DreamMarnieMovement.instance.locked = false;
+        Debug.Log("Instance: " + DreamMarnieMovement.instance);
+        Debug.Log("RB: " + (DreamMarnieMovement.instance != null ? DreamMarnieMovement.instance.rb : null));
 
+        // STOP MOVEMENT
+        DreamMarnieMovement.instance.locked = true;
+        DreamMarnieMovement.instance.rb.linearVelocity = Vector2.zero;
+
+        // SHOW MEMORY IMAGE
         memoryImageUI.SetActive(true);
 
+        // SHOW DIALOGUE
         DialogueManager.instance.ShowDialogue("It's... it's my hat. Mama? Mama gave this to me. I remember now.");
 
-        yield return new WaitForSeconds(5);
+        yield return new WaitForSeconds(7);
 
+        // HIDE IMAGE + UNFREEZE MOVEMENT
         memoryImageUI.SetActive(false);
         DialogueManager.instance.HideDialogue();
-
-        DreamMarnieMovement.instance.locked = true;
+        DreamMarnieMovement.instance.locked = false;
+        QuestManager.instance.hatMemoryUnlocked = true;
     }
 
     private void OnTriggerEnter2D(Collider2D collision)

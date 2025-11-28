@@ -3,14 +3,15 @@ using UnityEngine;
 public class DreamMarnieMovement : MonoBehaviour
 {
     public float speed = 3f;
-    private Rigidbody2D rb;
+    public Rigidbody2D rb;
     public static DreamMarnieMovement instance;
     public bool locked = false;
 
     void Awake()
     {
         instance = this;
-    }   
+    }
+
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -18,7 +19,12 @@ public class DreamMarnieMovement : MonoBehaviour
 
     void Update()
     {
-        if (locked) return;
+        if (locked)
+        {
+            rb.linearVelocity = Vector2.zero;
+            return;
+        }
+
         float x = Input.GetAxisRaw("Horizontal");
         float y = Input.GetAxisRaw("Vertical");
 
