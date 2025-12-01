@@ -34,7 +34,7 @@ public class MemoryObject : MonoBehaviour
         else if (memoryType == MemoryType.Bunny)
         {
             QuestManager.instance.bunnyMemoryUnlocked = true;
-            DialogueManager.instance.ShowDialogue("My bunny… I used to sleep with this every night.");
+            DialogueManager.instance.ShowDialogue("Someone must have bunny.");
         }
         else if (memoryType == MemoryType.Book)
         {

@@ -7,7 +7,8 @@ public class RoomSceneLogic : MonoBehaviour
 
     void Start()
     {
-        if (QuestManager.instance.currentDayState == DayState.Day)
+        if (QuestManager.instance.currentDayState == QuestManager.DayState.Day)
+        //QuestManager.instance.currentDayState = QuestManager.DayState.Night;
         {
             DialogueManager.instance.ShowDialogue("A new day… I should go to the beach.");
 
@@ -16,7 +17,7 @@ public class RoomSceneLogic : MonoBehaviour
         }
         else
         {
-            DialogueManager.instance.ShowDialogue("I should get some sleep…");
+            DialogueManager.instance.ShowDialogue("I feel sleepy... I should go to bed...");
 
             bedtimeBedTrigger.SetActive(true);
             morningDoorTrigger.SetActive(false);

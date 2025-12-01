@@ -44,7 +44,8 @@ public class Mound : MonoBehaviour
         DialogueManager.instance.ShowDialogue("There we go! Mama would love this.");
         yield return new WaitForSeconds(5);
         Debug.Log("C");
-        QuestManager.instance.currentDayState = DayState.Night;
+        //QuestManager.instance.currentDayState = DayState.Night;
+        QuestManager.instance.currentDayState = QuestManager.DayState.Night;
         Debug.Log("D");
         DialogueManager.instance.ShowDialogue("I should go home now.");
         yield return new WaitForSeconds(5);

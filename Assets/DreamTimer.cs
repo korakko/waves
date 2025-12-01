@@ -39,7 +39,9 @@ public class DreamTimer : MonoBehaviour
         // OPTIONAL: Freeze movement before scene load
         if (DreamMarnieMovement.instance != null)
             DreamMarnieMovement.instance.locked = true;
-        QuestManager.instance.currentDayState = DayState.Day;
+        
+        //QuestManager.instance.currentDayState = DayState.Day;
+        QuestManager.instance.currentDayState = QuestManager.DayState.Day;
         SceneManager.LoadScene("HomeScene");
     }
 }

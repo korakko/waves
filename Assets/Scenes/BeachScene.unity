@@ -258,7 +258,9 @@ MonoBehaviour:
   bunnyMemoryUnlocked: 0
   bookMemoryUnlocked: 0
   currentMemoryIndex: 0
-  currentDayState: 0
+  totalMemories: 3
+  memoryUnlocked: 
+  currentDayState: 1
 --- !u!4 &297079692
 Transform:
   m_ObjectHideFlags: 0
@@ -1956,8 +1958,8 @@ Transform:
   m_GameObject: {fileID: 1500014619}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 556.1969, y: 165.5223, z: 0}
-  m_LocalScale: {x: 86.843544, y: 59.75719, z: 1}
+  m_LocalPosition: {x: 255.6445, y: 168.9838, z: 0}
+  m_LocalScale: {x: 70.14353, y: 60.103783, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 393687658}
@@ -12548,7 +12550,7 @@ Transform:
   m_GameObject: {fileID: 2022109590}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2001, y: 774, z: 0}
+  m_LocalPosition: {x: 1286, y: 707, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -12792,9 +12794,13 @@ PrefabInstance:
       propertyPath: m_Name
       value: Marnie
       objectReference: {fileID: 0}
+    - target: {fileID: 5070494854629571239, guid: e9e260d9460db413a883dbbfe73d4e6d, type: 3}
+      propertyPath: m_Constraints
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 5883245089034406395, guid: e9e260d9460db413a883dbbfe73d4e6d, type: 3}
       propertyPath: moveSpeed
-      value: 120
+      value: 130
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
