@@ -159,7 +159,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -178, y: 107}
+  m_AnchoredPosition: {x: -799, y: 496}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &106214335
@@ -209,8 +209,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 28
-  m_fontSizeBase: 28
+  m_fontSize: 100
+  m_fontSizeBase: 100
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -247,7 +247,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_margin: {x: 0, y: 0, z: -36.677643, w: -29.342163}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -415,6 +415,7 @@ RectTransform:
   - {fileID: 1582934318}
   - {fileID: 1254919533}
   - {fileID: 548813061}
+  - {fileID: 634220296}
   m_Father: {fileID: 703861561}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -577,7 +578,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 7584875828100514122, guid: aab52dfd67d014d4abda0bd35cae3052, type: 3}
+  m_Sprite: {fileID: -2886060712430916873, guid: 17dc26ae103b044d2a28297c976c3267, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -614,6 +615,81 @@ RectTransform:
   m_AnchoredPosition: {x: 2.2627869, y: 37.335815}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &634220295
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 634220296}
+  - component: {fileID: 634220298}
+  - component: {fileID: 634220297}
+  m_Layer: 5
+  m_Name: book
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &634220296
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 634220295}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 415575705}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &634220297
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 634220295}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: -4211328751082233604, guid: d0f86f12e3ac1443294f7cbed84df467, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &634220298
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 634220295}
+  m_CullTransparentMesh: 1
 --- !u!1 &703861557
 GameObject:
   m_ObjectHideFlags: 0
@@ -1309,10 +1385,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   memoryIndex: 0
-  memoryImageUI: {fileID: 1325262308}
+  memoryImageUI: {fileID: 1582934317}
+  memorySprite: {fileID: 0}
+  cutsceneImages: []
   dialogueLines:
   - mama gave me this?
   - what who is mama?
+  memoryImageComponent: {fileID: 0}
 --- !u!1 &1337522526
 GameObject:
   m_ObjectHideFlags: 0
@@ -1484,7 +1563,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 2.2628, y: 37.3358}
+  m_AnchoredPosition: {x: -625, y: -392}
   m_SizeDelta: {x: 710.949, y: 405.4745}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1582934319
@@ -1536,6 +1615,7 @@ GameObject:
   - component: {fileID: 1596323183}
   - component: {fileID: 1596323182}
   - component: {fileID: 1596323184}
+  - component: {fileID: 1596323185}
   m_Layer: 0
   m_Name: BookMemory
   m_TagString: Untagged
@@ -1630,9 +1710,30 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::MemoryInteract
   memoryIndex: 2
   memoryImageUI: {fileID: 1596323181}
+  memorySprite: {fileID: 0}
+  cutsceneImages: []
   dialogueLines:
   - Damn, I love this book?!
   - ooh nice cover
+  memoryImageComponent: {fileID: 0}
+--- !u!114 &1596323185
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1596323181}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3cebca5f91d40484698b9cb8f3cded11, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::MemoryInteract
+  memoryIndex: 0
+  memoryImageUI: {fileID: 0}
+  memorySprite: {fileID: 0}
+  cutsceneImages: []
+  dialogueLines: []
+  memoryImageComponent: {fileID: 0}
 --- !u!1 &2048512725
 GameObject:
   m_ObjectHideFlags: 0
@@ -1644,6 +1745,7 @@ GameObject:
   - component: {fileID: 2048512728}
   - component: {fileID: 2048512727}
   - component: {fileID: 2048512729}
+  - component: {fileID: 2048512730}
   m_Layer: 0
   m_Name: BunnyMemory
   m_TagString: Untagged
@@ -1737,10 +1839,59 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MemoryInteract
   memoryIndex: 1
-  memoryImageUI: {fileID: 2048512725}
+  memoryImageUI: {fileID: 548813058}
+  memorySprite: {fileID: 0}
+  cutsceneImages: []
   dialogueLines:
   - hey this looks familiar?
   - did i have one like this?
+  memoryImageComponent: {fileID: 0}
+--- !u!61 &2048512730
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2048512725}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.67, y: 1.06}
+    newSize: {x: 0.67, y: 1.06}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Size: {x: 0.67, y: 1.06}
+  m_EdgeRadius: 0
 --- !u!1 &2114434926
 GameObject:
   m_ObjectHideFlags: 0
