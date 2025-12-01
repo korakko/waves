@@ -34,7 +34,13 @@ public class MemoryInteract : MonoBehaviour
             DialogueManager.instance.ShowDialogue(line);
             yield return new WaitForSeconds(3);
         }
-
+        // Show cutscene images one by one
+        foreach (GameObject img in cutsceneImages)
+        {
+            img.SetActive(true);
+            yield return new WaitForSeconds(2f);
+            img.SetActive(false);
+        }
         // Save memory
         //QuestManager.instance.memoryUnlocked[memoryIndex] = true;
 

@@ -1869,6 +1869,37 @@ Transform:
   m_Children: []
   m_Father: {fileID: 2032359155}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1293868329
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1293868330}
+  m_Layer: 0
+  m_Name: DayState
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1293868330
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1293868329}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -49.21564, y: 40.409275, z: 0}
+  m_LocalScale: {x: 0.0071428576, y: 0.0071428576, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2032359155}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1409915949
 GameObject:
   m_ObjectHideFlags: 0
@@ -2405,6 +2436,7 @@ Transform:
   - {fileID: 1513973322}
   - {fileID: 1289129635}
   - {fileID: 1698292493}
+  - {fileID: 1293868330}
   - {fileID: 1409915951}
   - {fileID: 349675364}
   - {fileID: 1620904237}
