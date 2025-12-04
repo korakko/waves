@@ -9,7 +9,7 @@ public class TutorialTrigger : MonoBehaviour
         if (shown) return;
         if (collision.CompareTag("Player"))
         {
-            DialogueManager.instance.ShowDialogue("Hmmm. I should collect these shells. They might be useful. Press 'Q' to pick up.");
+            DialogueManager.instance.ShowDialogue("Hmmm. I should collect these shells. They might be useful.");
             shown = true;
             Destroy(gameObject); // remove tutorial trigger
             //DialogueManager.instance.HideDialogue();

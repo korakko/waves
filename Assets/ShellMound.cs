@@ -95,13 +95,16 @@ public class Mound : MonoBehaviour
             // Swap mound visuals
             plainMound.SetActive(false);
             decoratedMound.SetActive(true);
+            QuestManager.instance.currentDayState = QuestManager.DayState.Night;
+            //FindObjectOfType<RoomSceneLogic>()?.UpdateRoomState();
 
             DialogueManager.instance.ShowDialogue("There we go! Mama would love this.");
             yield return new WaitForSeconds(3);
 
             // Go home
             QuestManager.instance.currentDayState = QuestManager.DayState.Night;
-
+            FindObjectOfType<RoomSceneLogic>()?.UpdateRoomState();
+            
             DialogueManager.instance.ShowDialogue("I should go home now.");
             yield return new WaitForSeconds(3);
 
@@ -117,6 +120,7 @@ public class Mound : MonoBehaviour
 
             DialogueManager.instance.HideDialogue();
             QuestManager.instance.shellQuestComplete = true;
+            QuestManager.instance.currentDayState = QuestManager.DayState.Night;
 
             Debug.Log("Cutscene ended!");
         }

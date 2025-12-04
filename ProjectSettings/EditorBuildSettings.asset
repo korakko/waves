@@ -6,14 +6,17 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/BeachScene.unity
-    guid: d44adf3b629d04661aeabbbfaaf6dbc8
+    path: Assets/Scenes/scene1.unity
+    guid: a4fd7a0390cbce44086d92a62ee44b4a
+  - enabled: 1
+    path: Assets/Scenes/waves.unity
+    guid: 252940c81e119b344bb30ecdfb5fa0c8
   - enabled: 1
     path: Assets/Scenes/HomeScene.unity
     guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 1
-    path: Assets/Scenes/waves.unity
-    guid: 252940c81e119b344bb30ecdfb5fa0c8
+    path: Assets/Scenes/BeachScene.unity
+    guid: d44adf3b629d04661aeabbbfaaf6dbc8
   - enabled: 0
     path: Assets/Scenes/SleepTime.unity
     guid: 199a49241028a45c4806d5a839f25c0b
@@ -23,8 +26,5 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Ending.unity
     guid: d66619c80fdc7e5428253aa77cfd8942
-  - enabled: 1
-    path: Assets/Scenes/scene1.unity
-    guid: a4fd7a0390cbce44086d92a62ee44b4a
   m_configObjects: {}
   m_UseUCBPForAssetBundles: 0
