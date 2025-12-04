@@ -230,7 +230,8 @@ MonoBehaviour:
   - GAME IN PROGRESS
   - Thank you very much for playing! We really appreciate it.
   - We do intend to improve. So maybe come back again?
-  - 'Creator: korakko (loser artist) Co-creator: novarai (trash programmer)'
+  - 'Creator: korakko (loser artist)                     Co-creator: novarai (trash
+    programmer)'
   delay: 3
   endingImage: {fileID: 0}
   endingSprites: []

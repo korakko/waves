@@ -273,7 +273,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7352b6b73c5dc4b1c8dd03ec7093faaa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DreamTimer
-  dreamDuration: 40
+  dreamDuration: 30
   timerText: {fileID: 106214335}
 --- !u!1 &139550862
 GameObject:
@@ -416,7 +416,8 @@ MonoBehaviour:
   memoryIndex: 0
   memoryImageUI: {fileID: 1582934317}
   memorySprite: {fileID: -5191414082449171980, guid: 9390fcab71875449db016ee18929009d, type: 3}
-  cutsceneImages: []
+  cutsceneImages:
+  - {fileID: 1582934317}
   dialogueLines:
   - I adore this hat...
   - Someone gave it to me?
@@ -711,12 +712,12 @@ GameObject:
   - component: {fileID: 548813060}
   - component: {fileID: 548813059}
   m_Layer: 5
-  m_Name: bunny?
+  m_Name: BunnyImage
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &548813059
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -724,7 +725,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 548813058}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
@@ -737,7 +738,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -2886060712430916873, guid: 17dc26ae103b044d2a28297c976c3267, type: 3}
+  m_Sprite: {fileID: 8714789333969498034, guid: 88d6f8c114953459183dcbf6ab839f91, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -771,8 +772,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 2.2627869, y: 37.335815}
-  m_SizeDelta: {x: 100, y: 100}
+  m_AnchoredPosition: {x: 8, y: 29.7636}
+  m_SizeDelta: {x: 1702.219, y: 851.2839}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &634220295
 GameObject:
@@ -786,7 +787,7 @@ GameObject:
   - component: {fileID: 634220298}
   - component: {fileID: 634220297}
   m_Layer: 5
-  m_Name: book
+  m_Name: BookImage
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -808,8 +809,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 100, y: 100}
+  m_AnchoredPosition: {x: 8, y: 29.7636}
+  m_SizeDelta: {x: 1702.219, y: 851.2839}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &634220297
 MonoBehaviour:
@@ -962,6 +963,7 @@ GameObject:
   m_Component:
   - component: {fileID: 715526607}
   - component: {fileID: 715526606}
+  - component: {fileID: 715526608}
   m_Layer: 0
   m_Name: DayState
   m_TagString: Untagged
@@ -997,6 +999,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &715526608
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 715526605}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4606affaa587f43ef80c3a04d8bc5039, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: '::'
 --- !u!1 &992896817
 GameObject:
   m_ObjectHideFlags: 0
@@ -1500,7 +1514,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1455081003
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1517,7 +1531,7 @@ MonoBehaviour:
   imageDisplay: {fileID: 1582934319}
   dialogueDisplay: {fileID: 1254919534}
   hatMemorySprite: {fileID: -5191414082449171980, guid: 9390fcab71875449db016ee18929009d, type: 3}
-  bunnyMemorySprite: {fileID: -2886060712430916873, guid: 17dc26ae103b044d2a28297c976c3267, type: 3}
+  bunnyMemorySprite: {fileID: 8714789333969498034, guid: 88d6f8c114953459183dcbf6ab839f91, type: 3}
   bookMemorySprite: {fileID: 6500252861171170518, guid: 1af797f9a949844b9b0ed14bda8458fd, type: 3}
 --- !u!4 &1455081004
 Transform:
@@ -1546,7 +1560,7 @@ GameObject:
   - component: {fileID: 1582934320}
   - component: {fileID: 1582934319}
   m_Layer: 5
-  m_Name: MemoryImage
+  m_Name: HatImage
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1584,7 +1598,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -1715,9 +1729,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MemoryInteract
   memoryIndex: 2
-  memoryImageUI: {fileID: 1596323181}
+  memoryImageUI: {fileID: 634220295}
   memorySprite: {fileID: 6500252861171170518, guid: 1af797f9a949844b9b0ed14bda8458fd, type: 3}
-  cutsceneImages: []
+  cutsceneImages:
+  - {fileID: 1582934317}
+  - {fileID: 548813058}
+  - {fileID: 634220295}
   dialogueLines:
   - Damn, I love this book?!
   - ooh nice cover
@@ -1896,7 +1913,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::MemoryInteract
   memoryIndex: 1
   memoryImageUI: {fileID: 548813058}
-  memorySprite: {fileID: -2886060712430916873, guid: 17dc26ae103b044d2a28297c976c3267, type: 3}
+  memorySprite: {fileID: 8714789333969498034, guid: 88d6f8c114953459183dcbf6ab839f91, type: 3}
   cutsceneImages: []
   dialogueLines:
   - hey this looks familiar?

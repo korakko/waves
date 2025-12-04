@@ -27,6 +27,14 @@ public class MemoryInteract : MonoBehaviour
         memoryImageUI.SetActive(true);
         memoryImageComponent.sprite = memorySprite;
         memoryImageUI.gameObject.SetActive(true);
+        foreach (GameObject img in cutsceneImages)
+        {
+            img.SetActive(false);
+        }
+
+        // Then show the correct one
+        memoryImageUI.SetActive(true);
+        memoryImageComponent.sprite = memorySprite;
 
         // Show dialogue line by line
         foreach (string line in dialogueLines)
@@ -70,14 +78,6 @@ public class MemoryInteract : MonoBehaviour
 
         QuestManager.instance.currentDayState = QuestManager.DayState.Day;
         // If all memories unlocked, load Thank You scene
-        if (QuestManager.instance.currentMemoryIndex >= QuestManager.instance.totalMemories)
-        {
-                SceneManager.LoadScene("Ending"); // <-- your separate scene
-        }
-        else
-        {
-            //SceneManager.LoadScene("HomeScene"); // normal home scene
-        }
     }
 
     private void OnTriggerEnter2D(Collider2D col)

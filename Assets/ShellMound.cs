@@ -1,5 +1,6 @@
 using UnityEngine;
 using System.Collections;
+using UnityEngine.SceneManagement;
 public class Mound : MonoBehaviour
 {
     public int requiredShells = 5;
@@ -7,7 +8,7 @@ public class Mound : MonoBehaviour
     public GameObject homeDoor;  
     public GameObject plainMound; 
     public GameObject decoratedMound; 
-
+    public SceneFader fader;
     private bool playerNearby = false;
     private bool cutscenePlayed = false;
 
@@ -58,6 +59,7 @@ public class Mound : MonoBehaviour
 
             DialogueManager.instance.HideDialogue();
             Debug.Log("Final cutscene ended.");
+            SceneManager.LoadScene("Ending");
             yield break;
         }
 
@@ -123,6 +125,18 @@ public class Mound : MonoBehaviour
             QuestManager.instance.currentDayState = QuestManager.DayState.Night;
 
             Debug.Log("Cutscene ended!");
+
+            if (QuestManager.instance.currentMemoryIndex >= QuestManager.instance.totalMemories)
+        {
+                fader.FadeToScene("Ending");
+                //yield return StartCoroutine(fader.FadeOut("Ending"));
+                yield return StartCoroutine(fader.FadeOutCoroutine("Ending"));
+                //SceneManager.LoadScene("Ending"); // <-- your separate scene
+        }
+        else
+        {
+            //SceneManager.LoadScene("HomeScene"); // normal home scene
+        }
         }
     }
     private void OnTriggerEnter2D(Collider2D collision)
