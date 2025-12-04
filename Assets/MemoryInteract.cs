@@ -72,7 +72,7 @@ public class MemoryInteract : MonoBehaviour
         // If all memories unlocked, load Thank You scene
         if (QuestManager.instance.currentMemoryIndex >= QuestManager.instance.totalMemories)
         {
-                SceneManager.LoadScene("ThankYouScene"); // <-- your separate scene
+                SceneManager.LoadScene("Ending"); // <-- your separate scene
         }
         else
         {

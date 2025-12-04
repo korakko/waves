@@ -1516,6 +1516,9 @@ MonoBehaviour:
   panel: {fileID: 415575704}
   imageDisplay: {fileID: 1582934319}
   dialogueDisplay: {fileID: 1254919534}
+  hatMemorySprite: {fileID: -5191414082449171980, guid: 9390fcab71875449db016ee18929009d, type: 3}
+  bunnyMemorySprite: {fileID: -2886060712430916873, guid: 17dc26ae103b044d2a28297c976c3267, type: 3}
+  bookMemorySprite: {fileID: 6500252861171170518, guid: 1af797f9a949844b9b0ed14bda8458fd, type: 3}
 --- !u!4 &1455081004
 Transform:
   m_ObjectHideFlags: 0
@@ -1581,7 +1584,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -1618,6 +1621,7 @@ GameObject:
   - component: {fileID: 1596323182}
   - component: {fileID: 1596323184}
   - component: {fileID: 1596323185}
+  - component: {fileID: 1596323186}
   m_Layer: 0
   m_Name: BookMemory
   m_TagString: Untagged
@@ -1740,6 +1744,52 @@ MonoBehaviour:
   - we used to...
   - Mama...
   memoryImageComponent: {fileID: 634220297}
+--- !u!61 &1596323186
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1596323181}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.65, y: 0.27}
+    newSize: {x: 0.65, y: 0.27}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Size: {x: 0.65, y: 0.27}
+  m_EdgeRadius: 0
 --- !u!1 &2048512725
 GameObject:
   m_ObjectHideFlags: 0
