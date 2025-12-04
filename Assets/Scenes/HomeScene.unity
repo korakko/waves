@@ -840,13 +840,14 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 349675364}
+  - component: {fileID: 349675365}
   m_Layer: 0
   m_Name: RoomSceneLogic
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &349675364
 Transform:
   m_ObjectHideFlags: 0
@@ -862,6 +863,20 @@ Transform:
   m_Children: []
   m_Father: {fileID: 2032359155}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &349675365
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 349675363}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8afaa260b894444e5bff87b0abeaa01d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::RoomSceneLogic
+  bedtimeBedTrigger: {fileID: 408444649}
+  morningDoorTrigger: {fileID: 593314311}
 --- !u!1 &408444649
 GameObject:
   m_ObjectHideFlags: 0
@@ -1111,7 +1126,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 427844169}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5ab4093339aa84cc59e9116dd0851081, type: 3}
   m_Name: 
@@ -1607,11 +1622,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::RoomMemoryDisplay
   roomItems:
   - {fileID: 427844169}
-  - {fileID: 191461882}
   - {fileID: 740039235}
+  - {fileID: 191461882}
   RoomHat: {fileID: 427844169}
-  RoomBunny: {fileID: 191461882}
-  RoomBook: {fileID: 740039235}
+  RoomBunny: {fileID: 740039235}
+  RoomBook: {fileID: 191461882}
 --- !u!4 &941635090
 Transform:
   m_ObjectHideFlags: 0
@@ -1999,6 +2014,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1513973322}
   - component: {fileID: 1513973321}
+  - component: {fileID: 1513973324}
+  - component: {fileID: 1513973323}
   m_Layer: 0
   m_Name: MemoryObject
   m_TagString: Untagged
@@ -2035,6 +2052,34 @@ Transform:
   m_Children: []
   m_Father: {fileID: 2032359155}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1513973323
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1513973320}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8a055dcb448834afcaab089ee30036d3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::MemoryObject
+  memoryType: 2
+  memoryImageUI: {fileID: 191461882}
+--- !u!114 &1513973324
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1513973320}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8a055dcb448834afcaab089ee30036d3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::MemoryObject
+  memoryType: 1
+  memoryImageUI: {fileID: 740039235}
 --- !u!4 &1620904237 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1536327000298784743, guid: e9e260d9460db413a883dbbfe73d4e6d, type: 3}
